@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Markus Tadej</title>
@@ -6,18 +6,14 @@
     <description>Recent content on Markus Tadej</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 Mar 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://tmarkus.eu/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 25 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://tmarkus.eu/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>tmarkus.eu</title>
       <link>https://tmarkus.eu/post/2019-03-25-tmarkus.eu/</link>
       <pubDate>Mon, 25 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://tmarkus.eu/post/2019-03-25-tmarkus.eu/</guid>
-      <description>Setup I wanted to setup my webpage for posting articles and thoughts. I was wandering over the vast plains of internets when I stumbled upon GitHub Pages. Since I have a GitHub account I thought to myself why wouldn&amp;rsquo;t I make myself a webpage. But how? I know some programming – I do some scripting in bash and python and I do know some html, css and JavaScript, which should be sufficient for a web page.</description>
+      <description>Setup I wanted to set up my webpage for posting articles and thoughts. I was wandering over the vast plains of the internets when I stumbled upon GitHub Pages. Since I have a GitHub account, I thought, why wouldn&amp;rsquo;t I make myself a webpage. But how? I know some programming – I do some scripting in bash and python, and I know some HTML, CSS, and JavaScript, which should be sufficient for a web page.</description>
     </item>
     
   </channel>

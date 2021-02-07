@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Markus Tadej">
 <meta name="description" content="Describe your website">
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.80.0" />
 <title>Markus Tadej</title>
 <link rel="shortcut icon" href="https://tmarkus.eu/images/favicon.ico">
 <link rel="stylesheet" href="https://tmarkus.eu/css/style.css">
@@ -17,22 +17,19 @@
 <link rel="stylesheet" href="https://tmarkus.eu/css/monosocialiconsfont.css">
 
 
-
 <link href="https://tmarkus.eu/index.xml" rel="alternate" type="application/rss+xml" title="Markus Tadej" />
-
+  <link rel="alternate" type="application/rss+xml" href="https://tmarkus.eu/index.xml" title="Markus Tadej" />
+  
 
 <meta property="og:title" content="Markus Tadej" />
 <meta property="og:description" content="Describe your website" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://tmarkus.eu/" />
-
-<meta property="og:updated_time" content="2019-03-25T00:00:00&#43;00:00"/>
-
+<meta property="og:updated_time" content="2019-03-25T00:00:00+00:00" />
 
 
 <meta itemprop="name" content="Markus Tadej">
 <meta itemprop="description" content="Describe your website">
-
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Markus Tadej"/>
@@ -43,91 +40,103 @@
     
     </head>
 <body>
-    <nav class="main-nav">
+  <nav class="main-nav">
 	
 
 	
  		<a href='/about/'>About</a>
-  	
+	
 
 	
-		<a class="cta" href="https://tmarkus.eu/index.xml">Subscribe</a>
+		
+		<button id="subscribe" onclick="div_show()">Subscribe</button>
 	
 </nav>
 
-    <section id="wrapper">
-        
+  <section id="wrapper">
+    
 	<div class="profile">
   
-  <section id="wrapper">
+    <section id="wrapper">
       <header id="header">
         <a href="https://tmarkus.eu/about">
           <img id="avatar" src="https://tmarkus.eu/images/avatar-tm.jpg"/>
         </a>
         <h1>Markus Tadej</h1>
         <h2>Tech &amp; Biotech</h2>
-    </header>
-  </section>
+      </header>
+    </section>
   
 </div>
 
 
-        
+    
 	<ul id="post-list">
-    
-        <li>
-            <a href='/post/2019-03-25-tmarkus.eu/'><aside class="dates">25 Mar 2019</aside></a>
-            <a href='/post/2019-03-25-tmarkus.eu/'>tmarkus.eu<h2>Short article about setting up my personal webpage for blogging.</h2></a>
-        </li>
-    
+  
+    <li>
+      <a href='/post/2019-03-25-tmarkus.eu/'><aside class="dates">25 Mar 2019</aside></a>
+      <a href='/post/2019-03-25-tmarkus.eu/'>tmarkus.eu<h2>Short article about setting up my personal webpage for blogging.</h2></a>
+    </li>
+  
 </ul>
 
 	<nav id="post-nav">
-    
+  
 </nav>
 
 
-
-        <footer id="footer">
     
-        <div id="social">
+<div id="popper" style="overflow:hidden;">
+  
+  <div id="popupContact">
+    
+    <form action="#" id="form" method="post" name="form">
+      <input id="email" name="email" placeholder="Email" type="text">
+      <button onclick="check_empty()" id="submit">Submit</button><button onclick="div_hide()" id="cancel">Cancel</button>
+    </form>
+  </div>
+  
+</div>
+
+
+    <footer id="footer">
+  
+    <div id="social">
 
 	
-	
-    
-    <a class="symbol" href="https://www.facebook.com/markus.tade">
-        roundedfacebook
-    </a>
-    
-    <a class="symbol" href="https://www.github.com/polentozer">
-        roundedgithub
-    </a>
-    
-    <a class="symbol" href="https://www.linkedin.com/in/tadejmarkus/">
-        roundedlinkedin
-    </a>
-    
-    <a class="symbol" href="https://www.twitter.com/tadejmarkus">
-        roundedtwitterbird
-    </a>
-    
-
+  
+  <a class="symbol" href="https://www.facebook.com/markus.tadej">
+    roundedfacebook
+  </a>
+  
+  <a class="symbol" href="https://www.github.com/polentozer">
+    roundedgithub
+  </a>
+  
+  <a class="symbol" href="https://www.linkedin.com/in/tadejmarkus/">
+    roundedlinkedin
+  </a>
+  
+  <a class="symbol" href="https://www.twitter.com/tadejmarkus">
+    roundedtwitterbird
+  </a>
+  
 
 </div>
 
-    
-    <p class="small">
-    
-        © Copyright 2019 Markus Tadej
-    
-    </p>
+  
+  <p class="small">
+  
+    © Copyright 2021 Markus Tadej
+  
+  </p>
 </footer>
 
-    </section>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </section>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://tmarkus.eu/js/main.js"></script>
-<script src="https://tmarkus.eu/js/highlight.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+
+
 
 
 

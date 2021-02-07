@@ -26,7 +26,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	font-family: "icons";
 	font-style: normal;
 	font-weight: normal;
-	speak: none;
+	speak-as: none;
 	display: inline-block;
 	text-decoration: inherit;
 	text-align: center;
@@ -86,7 +86,7 @@ h2 {
 	display: inline-block;
 	width: 100px;
 	height: 100px;
-	border-radius: 50%;
+	border-radius: 1em;
 	margin-bottom: 20px;
 }
 
@@ -118,7 +118,7 @@ h2 {
 }
 
 nav.main-nav {
-	padding: 20px 20px 0;
+	padding: 20px 20px 0px;
 
 	/*max-width: 600px;*/
 	/*width:100%;*/
@@ -147,6 +147,34 @@ nav.main-nav a.cta {
 	margin-left: 12px;
 }
 
+
+/* BUTTON */
+button {
+	top: 8px;
+	right: 6px;
+	padding: 8px 12px;
+	background: #5badf0;
+	color: #fff;
+	font-size: 13px;
+	line-height: 1.35;
+	border-radius: 3px;
+	border: none;
+	cursor:pointer;
+}
+
+button:hover{
+	background: #5badf081;
+	transition-delay: 10ms;
+}
+
+button:focus{
+	border: none;
+	outline: none;
+	background: #5badf0;
+}
+
+
+/* $$$$$$$$$$$ */
 #wrapper {
   max-width: 800px;
   margin: 0 auto;
@@ -176,6 +204,7 @@ a,
 	text-decoration: none;
 	color: #5badf0;
 	color: #5694f1;
+	transition-delay: 3ms;
 }
 
 p a { color: #5694f1; }
@@ -391,6 +420,7 @@ Post List
 }
 
 #post-list {
+	margin-top: 4em;
 	margin-bottom: 0;
 }
 
@@ -503,6 +533,7 @@ Post List
 #sharing a:hover {
 	/*color: #444;*/
 	opacity: 0.8;
+	transition-delay: 10ms;
 }
 
 /* Post Navigation */
@@ -669,7 +700,8 @@ a.symbol {
 }
 
 a.symbol:hover {
-    color: #BCD4DA;
+		color: #BCD4DA;
+		transition-delay: 100ms;
 }
 
 code { 
@@ -700,3 +732,67 @@ figcaption::before {
 	content: 'Figure ' counter(fig) ':\0020';
 	font-weight: bold;
 }
+
+
+/* FORM */
+#popper {
+	width:100%;
+	height:100%;
+	opacity: .97;
+	top:0;
+	left:0;
+	display:none;
+	position:fixed;
+	background-color:#313131;
+	overflow:auto;
+}
+
+div#popupContact {
+	position: absolute;
+	left:50%;
+	top:20%;
+	margin-left:-150px;
+}
+
+form {
+	padding: 1em;
+	width:300px;
+	background-color:#fff;
+	border-radius: 0.5em;
+}
+
+input[type=text] {
+	width:100%;
+	padding:10px;
+	border:1px solid #ccc;
+	font-size:16px;
+	border-radius: 0.5em;
+	outline: none;
+}
+
+button#submit {
+	margin-top: 1em;
+	margin-right: 5%;
+	width: 45%;
+}
+
+button#cancel {
+	margin-top: 1em;
+	width: 45%;
+	margin-left: 5%;
+	background: #8a1d1d8a;
+	color: #fff;
+	/* background: #8a1d1d; */
+}
+
+button#cancel:hover{
+	background: #8a1d1d;
+	transition-delay: 10ms;
+	color: #fff;
+}
+
+button#cancel:focus{
+	border: none;
+	outline: none;
+}
+

@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Markus Tadej">
 <meta name="description" content="Describe your website">
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.80.0" />
 <title>Markus Tadej &middot; tmarkus.eu</title>
 <link rel="shortcut icon" href="https://tmarkus.eu/images/favicon.ico">
 <link rel="stylesheet" href="https://tmarkus.eu/css/style.css">
@@ -17,26 +17,22 @@
 <link rel="stylesheet" href="https://tmarkus.eu/css/monosocialiconsfont.css">
 
 
-
 <link href="https://tmarkus.eu/index.xml" rel="alternate" type="application/rss+xml" title="Markus Tadej" />
-
+  
 
 <meta property="og:title" content="tmarkus.eu" />
 <meta property="og:description" content="Short article about setting up my personal webpage for blogging." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://tmarkus.eu/post/2019-03-25-tmarkus.eu/" />
-<meta property="article:published_time" content="2019-03-25T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2019-03-25T00:00:00&#43;00:00"/>
-
+<meta property="article:published_time" content="2019-03-25T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-03-25T00:00:00+00:00" />
 
 
 <meta itemprop="name" content="tmarkus.eu">
 <meta itemprop="description" content="Short article about setting up my personal webpage for blogging.">
-
-
-<meta itemprop="datePublished" content="2019-03-25T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2019-03-25T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="313">
+<meta itemprop="datePublished" content="2019-03-25T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2019-03-25T00:00:00+00:00" />
+<meta itemprop="wordCount" content="266">
 
 
 
@@ -51,104 +47,91 @@
     
     </head>
 <body>
-    <nav class="main-nav">
+  <nav class="main-nav">
 	
 		<a href='https://tmarkus.eu/'> <span class="arrow">←</span>Home</a>
 	
 
 	
  		<a href='/about/'>About</a>
-  	
+	
 
 	
-		<a class="cta" href="https://tmarkus.eu/index.xml">Subscribe</a>
+		
+		<button id="subscribe" onclick="div_show()">Subscribe</button>
 	
 </nav>
 
-    <section id="wrapper">
-        
-        
+  <section id="wrapper">
+    
+    
 <article class="post">
-    <header>
-        <h1>tmarkus.eu</h1>
-        <h2 class="subtitle">Short article about setting up my personal webpage for blogging.</h2>
-        <h2 class="headline">
-        25 March 2019
-        <br>
-        
-        
-            
-                <a href="https://tmarkus.eu/tags/test">test</a>
-            
-                <a href="https://tmarkus.eu/tags/computer">computer</a>
-            
-                <a href="https://tmarkus.eu/tags/web">web</a>
-            
-        
-        
-        </h2>
-    </header>
-    <section id="post-body">
-        
-
-<h2 id="setup">Setup</h2>
-
-<p>I wanted to setup my webpage for posting articles and thoughts.
-I was wandering over the vast plains of internets when I stumbled upon GitHub Pages.
-Since I have a <a href="https://www.github.com">GitHub</a> account I thought to myself why wouldn&rsquo;t I make myself a webpage.
+  <header>
+    <h1>tmarkus.eu</h1>
+    <h2 class="subtitle">Short article about setting up my personal webpage for blogging.</h2>
+    <h2 class="headline">
+    25 March 2019
+    <br>
+    
+    
+      
+        <a href="https://tmarkus.eu/tags/test">test</a>
+      
+        <a href="https://tmarkus.eu/tags/computer">computer</a>
+      
+        <a href="https://tmarkus.eu/tags/web">web</a>
+      
+    
+    
+    </h2>
+  </header>
+  <section id="post-body">
+    <h2 id="setup">Setup</h2>
+<p>I wanted to set up my webpage for posting articles and thoughts.
+I was wandering over the vast plains of the internets when I stumbled upon GitHub Pages.
+Since I have a <a href="https://www.github.com">GitHub</a> account, I thought, why wouldn&rsquo;t I make myself a webpage.
 But how?
-I know some programming – I do some scripting in bash and python and I do know some html, css and JavaScript, which should be sufficient for a web page.
-But I didn&rsquo;t know where exactly to start, so I googled how to setup my first webpage and so I came across <a href="https://gohugo.io">Hugo</a>.</p>
-
+I know some programming – I do some scripting in bash and python, and I know some HTML, CSS, and JavaScript, which should be sufficient for a web page.
+I searched for tips on how to set up my first webpage, so I came across <a href="https://gohugo.io">Hugo</a>.</p>
 <h3 id="hugo">Hugo</h3>
-
 <blockquote>
-<p>Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again.
+<p>Hugo is a fast and modern static site generator written in Go and designed to make website creation fun again.
 So, that is what they say on their page.</p>
 </blockquote>
-
-<p>Because I really don&rsquo;t have much (or any for that matter) experience in building websites, I thought to myself: well, why not Hugo then.
-There are more than 100 different themes you can use and some of them are really nice.
-For my site I wanted minimalistic feel, so I decided to start with the <em>cactus</em> theme.
-I did some tweaks here and there to get the feeling right and now I am writing my first article, which brings me to content.</p>
-
+<p>Because I don&rsquo;t have much (or any for that matter) experience building websites, I thought to myself: well, why not Hugo then.
+There are more than 100 different themes you can use.
+I wanted minimalistic feel for my site, so I decided to start with the <em>cactus</em> theme.
+I did some tweaks here and there to get the feeling right, and now I am writing my first article, which brings me to content.</p>
 <h2 id="content">Content</h2>
-
 <p>What will I publish here?
 Should I have a content theme for my site?
 Well, I think I&rsquo;ll start with the most obvious thing: my work and my interests.
-I guess I&rsquo;ll mostly write about what I do for work and my PhD, however, I will not limit myself.
-If there will be something I&rsquo;ll think is worth writing about, then I&rsquo;ll still do it.</p>
-
+I guess I&rsquo;ll mostly write about what I do for work and my PhD</p>
 <h2 id="conclusion">Conclusion</h2>
+<p>So, here I am.<br>
+I managed to get myself a webpage with a custom domain name.
+I will probably rewrite this article once I have time.</p>
 
-<p>So, here I am.<br />
-I managed to get myself a webpage with custom domain name.
-I will probably rewrite this article once I&rsquo;ll have more time, but until then, this will have to do it.</p>
-
-    </section>
+  </section>
 </article>
 
 <footer id="post-meta" class="clearfix">
-    <a href="https://twitter.com/tadejmarkus">
-    <img class="avatar" src="https://tmarkus.eu/images/avatar-tm.jpg">
-    <div>
-        <span class="dark">Markus Tadej</span>
-        <span>I&#39;m a microbiologist who likes to code.</span>
-    </div>
-    </a>
-    <section id="sharing">
-        <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2ftmarkus.eu%2fpost%2f2019-03-25-tmarkus.eu%2f - tmarkus.eu by @tadejmarkus"><span class="icon-twitter"> tweet</span></a>
-
-<a class="facebook" href="#" onclick="
-    window.open(
-      'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
-      'facebook-share-dialog',
-      'width=626,height=436');
-    return false;"><span class="icon-facebook-rect"> Share</span>
+  <a href="https://twitter.com/tadejmarkus">
+  <img class="avatar" src="https://tmarkus.eu/images/avatar-tm.jpg">
+  <div>
+    <span class="dark">Markus Tadej</span>
+    <span>I&#39;m a microbiologist who likes to code.</span>
+  </div>
+  </a>
+  <section id="sharing">
+    <a class="twitter" href="https://twitter.com/intent/tweet?text=https%3a%2f%2ftmarkus.eu%2fpost%2f2019-03-25-tmarkus.eu%2f - tmarkus.eu by @tadejmarkus">
+  <span class="icon-twitter"> tweet</span>
+</a>
+<a class="facebook" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">
+  <span class="icon-facebook-rect"> Share</span>
 </a>
 
-    </section>
+  </section>
 </footer>
 
 <div id="disqus_thread"></div>
@@ -173,55 +156,65 @@ I will probably rewrite this article once I&rsquo;ll have more time, but until t
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
 <ul id="post-list" class="archive readmore">
-    <h3>Read more</h3>
-
-    
-    
-    
+  <h3>Read more</h3>
+  
+  
+  
 </ul>
 
 
-
-        <footer id="footer">
     
-        <div id="social">
+<div id="popper" style="overflow:hidden;">
+  
+  <div id="popupContact">
+    
+    <form action="#" id="form" method="post" name="form">
+      <input id="email" name="email" placeholder="Email" type="text">
+      <button onclick="check_empty()" id="submit">Submit</button><button onclick="div_hide()" id="cancel">Cancel</button>
+    </form>
+  </div>
+  
+</div>
+
+
+    <footer id="footer">
+  
+    <div id="social">
 
 	
-	
-    
-    <a class="symbol" href="https://www.facebook.com/markus.tade">
-        roundedfacebook
-    </a>
-    
-    <a class="symbol" href="https://www.github.com/polentozer">
-        roundedgithub
-    </a>
-    
-    <a class="symbol" href="https://www.linkedin.com/in/tadejmarkus/">
-        roundedlinkedin
-    </a>
-    
-    <a class="symbol" href="https://www.twitter.com/tadejmarkus">
-        roundedtwitterbird
-    </a>
-    
-
+  
+  <a class="symbol" href="https://www.facebook.com/markus.tadej">
+    roundedfacebook
+  </a>
+  
+  <a class="symbol" href="https://www.github.com/polentozer">
+    roundedgithub
+  </a>
+  
+  <a class="symbol" href="https://www.linkedin.com/in/tadejmarkus/">
+    roundedlinkedin
+  </a>
+  
+  <a class="symbol" href="https://www.twitter.com/tadejmarkus">
+    roundedtwitterbird
+  </a>
+  
 
 </div>
 
-    
-    <p class="small">
-    
-        © Copyright 2019 Markus Tadej
-    
-    </p>
+  
+  <p class="small">
+  
+    © Copyright 2021 Markus Tadej
+  
+  </p>
 </footer>
 
-    </section>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </section>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://tmarkus.eu/js/main.js"></script>
-<script src="https://tmarkus.eu/js/highlight.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+
+
 
 
 

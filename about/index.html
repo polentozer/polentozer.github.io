@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="Markus Tadej">
 <meta name="description" content="Describe your website">
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.80.0" />
 <title>Markus Tadej &middot; About</title>
 <link rel="shortcut icon" href="https://tmarkus.eu/images/favicon.ico">
 <link rel="stylesheet" href="https://tmarkus.eu/css/style.css">
@@ -17,22 +17,19 @@
 <link rel="stylesheet" href="https://tmarkus.eu/css/monosocialiconsfont.css">
 
 
-
 <link href="https://tmarkus.eu/index.xml" rel="alternate" type="application/rss+xml" title="Markus Tadej" />
-
+  <link rel="alternate" type="application/rss+xml" href="https://tmarkus.eu/about/index.xml" title="Markus Tadej" />
+  
 
 <meta property="og:title" content="About" />
 <meta property="og:description" content="Describe your website" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://tmarkus.eu/about/" />
-
-<meta property="og:updated_time" content="2019-03-20T00:00:00&#43;00:00"/>
-
+<meta property="og:updated_time" content="2019-03-20T00:00:00+00:00" />
 
 
 <meta itemprop="name" content="About">
 <meta itemprop="description" content="Describe your website">
-
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="About"/>
@@ -43,23 +40,24 @@
     
     </head>
 <body>
-    <nav class="main-nav">
+  <nav class="main-nav">
 	
 		<a href='https://tmarkus.eu/'> <span class="arrow">←</span>Home</a>
 	
 
 	
  		<a href='/about/'>About</a>
-  	
+	
 
 	
-		<a class="cta" href="https://tmarkus.eu/index.xml">Subscribe</a>
+		
+		<button id="subscribe" onclick="div_show()">Subscribe</button>
 	
 </nav>
 
-    <section id="wrapper">
-        
-    <div class="profile">
+  <section id="wrapper">
+    
+  <div class="profile">
   
     <header id="header">
       <a href="https://tmarkus.eu/">
@@ -72,77 +70,75 @@
 </div>
 
 
-        <p>Hi,</p>
-
-<p>my name is Tadej Markus. I am a microbiologist currently working as a researcher at <a href="https://www.aciesbio.com">Acies Bio Ltd.</a> in Ljubljana, SI.</p>
-
-<p>I am doing my PhD on metabolically engineering yeast <em>Yarrowia lipolytica</em>, where I try to utilize modern approaches to develop a sustainable biorefinery for production of chemicals.
-I have big passion for technology and biotechnology – especially for computer science and data science.<br />
+    
+  <p>Hi, my name is Tadej Markus. I am a microbiologist currently working as a researcher at <a href="https://www.aciesbio.com">Acies Bio Ltd.</a> in Ljubljana, SI.</p>
+<p>I am doing my PhD on metabolically engineering yeast <em>Yarrowia lipolytica</em>, where I try to utilize modern approaches to develop a sustainable biorefinery for the production of chemicals.
+I have a big passion for technology and biotechnology.<br>
 I also do some programming (mostly in Python).</p>
-
-<p>Besides, I like going outdoors<sup class="footnote-ref" id="fnref:"><a href="#fn:">1</a></sup>, playing sports and discussing politics.</p>
-
-<p><br></p>
-
+<p>Besides, I like going outdoors[^], playing sports, and discussing politics.</p>
+<!-- raw HTML omitted -->
 <p>You can find me on:</p>
-
 <ul>
 <li><a href="https://www.facebook.com/markus.tadej">Facebook</a></li>
 <li><a href="https://www.github.com/polentozer">GitHub</a></li>
 <li><a href="https://www.linkedin.com/in/tadejmarkus">LinkedIn</a></li>
 <li><a href="https://www.twitter.com/tadejmarkus">Twitter</a></li>
 </ul>
-<div class="footnotes">
+<p>[^]: Cover photo was taken on the mountain <a href="https://en.wikipedia.org/wiki/Stol_(Karawanks)">Stol</a> (2236 m) – the highest mountain of the Karawanks ridge.</p>
 
-<hr />
 
-<ol>
-<li id="fn:">Cover photo was taken on the mountain <a href="https://en.wikipedia.org/wiki/Stol_(Karawanks)">Stol</a> (2236 m) – the highest mountain of the Karawanks ridge.
- <a class="footnote-return" href="#fnref:">↩</a></li>
-</ol>
+    
+<div id="popper" style="overflow:hidden;">
+  
+  <div id="popupContact">
+    
+    <form action="#" id="form" method="post" name="form">
+      <input id="email" name="email" placeholder="Email" type="text">
+      <button onclick="check_empty()" id="submit">Submit</button><button onclick="div_hide()" id="cancel">Cancel</button>
+    </form>
+  </div>
+  
 </div>
 
 
-        <footer id="footer">
-    
-        <div id="social">
+    <footer id="footer">
+  
+    <div id="social">
 
 	
-	
-    
-    <a class="symbol" href="https://www.facebook.com/markus.tade">
-        roundedfacebook
-    </a>
-    
-    <a class="symbol" href="https://www.github.com/polentozer">
-        roundedgithub
-    </a>
-    
-    <a class="symbol" href="https://www.linkedin.com/in/tadejmarkus/">
-        roundedlinkedin
-    </a>
-    
-    <a class="symbol" href="https://www.twitter.com/tadejmarkus">
-        roundedtwitterbird
-    </a>
-    
-
+  
+  <a class="symbol" href="https://www.facebook.com/markus.tadej">
+    roundedfacebook
+  </a>
+  
+  <a class="symbol" href="https://www.github.com/polentozer">
+    roundedgithub
+  </a>
+  
+  <a class="symbol" href="https://www.linkedin.com/in/tadejmarkus/">
+    roundedlinkedin
+  </a>
+  
+  <a class="symbol" href="https://www.twitter.com/tadejmarkus">
+    roundedtwitterbird
+  </a>
+  
 
 </div>
 
-    
-    <p class="small">
-    
-        © Copyright 2019 Markus Tadej
-    
-    </p>
+  
+  <p class="small">
+  
+    © Copyright 2021 Markus Tadej
+  
+  </p>
 </footer>
 
-    </section>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </section>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://tmarkus.eu/js/main.js"></script>
-<script src="https://tmarkus.eu/js/highlight.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+
+
 
 
 
